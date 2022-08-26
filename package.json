@@ -1,0 +1,34 @@
+{
+  "name": "real-estate-react",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "concurrently": "^7.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "eslint": "^7.32.0",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  },
+  "scripts": {
+    "server": "nodemon app",
+    "client": "npm start --prefix client",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm run build --prefix client",
+    "test": "npm run test --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superdev0421/real-estate-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/superdev0421/real-estate-react/issues"
+  },
+  "homepage": "https://github.com/superdev0421/real-estate-react#readme"
+}
